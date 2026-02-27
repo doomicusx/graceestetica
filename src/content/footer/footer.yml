@@ -1,0 +1,36 @@
+logo: "/images/logo.svg"
+logoAlt: "Logo AuraSkin"
+
+menu:
+  - label: "Sobre"
+    href: "#sobre"
+  - label: "Serviços"
+    href: "#servicos"
+  - label: "Benefícios"
+    href: "#beneficios"
+  - label: "Avaliações"
+    href: "#avaliacoes"
+  - label: "Dúvidas"
+    href: "#duvidas"
+  - label: "Contato"
+    href: "#contato"
+
+socials:
+  - label: "Instagram"
+    href: "https://instagram.com/"
+  - label: "X / Twitter"
+    href: "https://x.com/"
+  - label: "Facebook"
+    href: "https://facebook.com/"
+
+address: |
+  Av. Alfredo Ignácio Nogueira Penido, 335 - sala 1302 - Jardim Aquarius, São José dos Campos
+contacts:
+  - label: "WhatsApp"
+    href: "https://api.whatsapp.com/send/?phone=5512988401483"
+  - label: "E-mail"
+    href: "mailto:contato@auraskin.com"
+  - label: "Telefone"
+    href: "tel:+5512988401483"
+
+copyright: "© 2026 — Todos os direitos reservados."
