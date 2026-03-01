@@ -112,6 +112,7 @@ const beneficios = defineCollection({
   }),
 });
 
+// src/content/config.ts
 const avaliacoes = defineCollection({
   type: "data",
   schema: z.object({
@@ -119,22 +120,17 @@ const avaliacoes = defineCollection({
     sectionTitle: z.string(),
     buttonText: z.string(),
     buttonLink: z.string(),
-
     items: z.array(
       z.discriminatedUnion("type", [
         z.object({
           type: z.literal("image"),
           image: z.string(),
           alt: z.string(),
-          stars: z.number(),
-          text: z.string(),
-          author: z.string(),
         }),
         z.object({
           type: z.literal("video"),
           video: z.string(),
         }),
-        // ADICIONADO: Novo tipo para apenas texto
         z.object({
           type: z.literal("text"),
           text: z.string(),

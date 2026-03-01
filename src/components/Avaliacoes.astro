@@ -59,21 +59,8 @@ const { sectionLabel, sectionTitle, buttonText, buttonLink, items } =
       {
         items.map((item) => (
           <>
-            {/* TIPO TEXTO (Novo Bloco) */}
             {item.type === "text" && (
-              <li class="p-6 cms-bg-light rounded-2xl js-avaliacoes-cards h-fit flex flex-col gap-3">
-                <div class="flex items-center gap-0.5">
-                  {[...Array(5)].map(() => (
-                    <svg
-                      aria-hidden="true"
-                      focusable="false"
-                      viewBox="0 0 14 14"
-                      class="size-3.5 block cms-fill-dark"
-                    >
-                      <path d="M12.551 6.1794L9.08161 4.91831L7.82051 1.44893C7.75836 1.28148 7.64644 1.13705 7.4998 1.03507C7.35316 0.933083 7.17882 0.878418 7.0002 0.878418C6.82158 0.878418 6.64724 0.933083 6.5006 1.03507C6.35396 1.13705 6.24204 1.28148 6.17989 1.44893L4.91879 4.91831L1.44942 6.1794C1.28196 6.24156 1.13754 6.35347 1.03556 6.50011C0.933571 6.64675 0.878906 6.82109 0.878906 6.99971C0.878906 7.17833 0.933571 7.35267 1.03556 7.49931C1.13754 7.64595 1.28196 7.75787 1.44942 7.82002L4.91879 9.08167L6.17989 12.5505C6.24204 12.7179 6.35396 12.8624 6.5006 12.9644C6.64724 13.0663 6.82158 13.121 7.0002 13.121C7.17882 13.121 7.35316 13.0663 7.4998 12.9644C7.64644 12.8624 7.75836 12.7179 7.82051 12.5505L9.08215 9.08112L12.551 7.82002C12.7184 7.75787 12.8629 7.64595 12.9648 7.49931C13.0668 7.35267 13.1215 7.17833 13.1215 6.99971C13.1215 6.82109 13.0668 6.64675 12.9648 6.50011C12.8629 6.35347 12.7184 6.24156 12.551 6.1794ZM8.59051 8.32862C8.5305 8.35047 8.476 8.3852 8.43084 8.43036C8.38568 8.47551 8.35096 8.53001 8.32911 8.59002L7.0002 12.2442L5.67129 8.59002C5.64944 8.53001 5.61472 8.47551 5.56956 8.43036C5.5244 8.3852 5.4699 8.35047 5.40989 8.32862L1.75567 6.99971L5.40989 5.67081C5.4699 5.64895 5.5244 5.61423 5.56956 5.56907C5.61472 5.52391 5.64944 5.46941 5.67129 5.4094L7.0002 1.75518L8.32911 5.4094C8.35096 5.46941 8.38568 5.52391 8.43084 5.56907C8.476 5.61423 8.5305 5.64895 8.59051 5.67081L12.2447 6.99971L8.59051 8.32862Z" />
-                    </svg>
-                  ))}
-                </div>
+              <li class="p-6 cms-bg-light rounded-2xl h-fit flex flex-col gap-3">
                 <blockquote class="text-base leading-tight cms-text-dark">
                   "{item.text}"
                 </blockquote>
@@ -83,61 +70,23 @@ const { sectionLabel, sectionTitle, buttonText, buttonLink, items } =
               </li>
             )}
 
-            {/* TIPO IMAGEM */}
             {item.type === "image" && (
-              <li class="p-6 cms-bg-light rounded-2xl js-avaliacoes-cards h-fit">
-                <article class="flex flex-col gap-3">
-                  <figure class="h-37.5">
-                    <img
-                      src={item.image}
-                      alt={item.alt}
-                      class="w-full h-full object-cover rounded-lg"
-                    />
-                  </figure>
-                  <div class="flex items-center gap-0.5">
-                    {[...Array(5)].map(() => (
-                      <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        viewBox="0 0 14 14"
-                        class="size-3.5 block cms-fill-dark"
-                      >
-                        <path d="M12.551 6.1794L9.08161 4.91831L7.82051 1.44893C7.75836 1.28148 7.64644 1.13705 7.4998 1.03507C7.35316 0.933083 7.17882 0.878418 7.0002 0.878418C6.82158 0.878418 6.64724 0.933083 6.5006 1.03507C6.35396 1.13705 6.24204 1.28148 6.17989 1.44893L4.91879 4.91831L1.44942 6.1794C1.28196 6.24156 1.13754 6.35347 1.03556 6.50011C0.933571 6.64675 0.878906 6.82109 0.878906 6.99971C0.878906 7.17833 0.933571 7.35267 1.03556 7.49931C1.13754 7.64595 1.28196 7.75787 1.44942 7.82002L4.91879 9.08167L6.17989 12.5505C6.24204 12.7179 6.35396 12.8624 6.5006 12.9644C6.64724 13.0663 6.82158 13.121 7.0002 13.121C7.17882 13.121 7.35316 13.0663 7.4998 12.9644C7.64644 12.8624 7.75836 12.7179 7.82051 12.5505L9.08215 9.08112L12.551 7.82002C12.7184 7.75787 12.8629 7.64595 12.9648 7.49931C13.0668 7.35267 13.1215 7.17833 13.1215 6.99971C13.1215 6.82109 13.0668 6.64675 12.9648 6.50011C12.8629 6.35347 12.7184 6.24156 12.551 6.1794ZM8.59051 8.32862C8.5305 8.35047 8.476 8.3852 8.43084 8.43036C8.38568 8.47551 8.35096 8.53001 8.32911 8.59002L7.0002 12.2442L5.67129 8.59002C5.64944 8.53001 5.61472 8.47551 5.56956 8.43036C5.5244 8.3852 5.4699 8.35047 5.40989 8.32862L1.75567 6.99971L5.40989 5.67081C5.4699 5.64895 5.5244 5.61423 5.56956 5.56907C5.61472 5.52391 5.64944 5.46941 5.67129 5.4094L7.0002 1.75518L8.32911 5.4094C8.35096 5.46941 8.38568 5.52391 8.43084 5.56907C8.476 5.61423 8.5305 5.64895 8.59051 5.67081L12.2447 6.99971L8.59051 8.32862Z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <blockquote>
-                    <p class="text-base max-w-[25ch] leading-tight cms-text-dark">
-                      "{item.text}"
-                    </p>
-                  </blockquote>
-                  <footer class="text-base font-inst tracking-tight cms-text-dark">
-                    <cite class="not-italic">{item.author}</cite>
-                  </footer>
-                </article>
+              <li class="p-6 cms-bg-light rounded-2xl h-fit">
+                <img
+                  src={item.image}
+                  alt={item.alt}
+                  class="w-full h-auto max-h-[400px] object-cover rounded-lg"
+                />
               </li>
             )}
 
-            {/* TIPO VÍDEO */}
             {item.type === "video" && (
-              <li class="p-6 cms-bg-light rounded-2xl w-full relative h-87.5 js-avaliacoes-cards">
+              <li class="p-6 cms-bg-light rounded-2xl w-full relative h-87.5">
                 <video
                   class="w-full h-full object-cover rounded-lg"
                   src={item.video}
-                  preload="metadata"
-                  playsinline
+                  controls
                 />
-                <button
-                  type="button"
-                  class="absolute inset-0 flex items-center justify-center group cursor-pointer"
-                  aria-label="Reproduzir vídeo"
-                  data-video
-                >
-                  <span class="size-16 rounded-full cms-bg-light flex items-center justify-center transition-transform duration-300 group-hover:scale-105 cms-text-dark">
-                    {" "}
-                    ▶{" "}
-                  </span>
-                </button>
               </li>
             )}
           </>

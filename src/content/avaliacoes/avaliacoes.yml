@@ -1,9 +1,13 @@
 sectionLabel: "Avaliações"
 sectionTitle: "Quem já fez parte do nosso processo"
 buttonText: "Veja mais avaliações →"
-buttonLink: "#"
+buttonLink: "https://www.google.com/maps/place/Grace+Est%C3%A9tica+Integrativa+%2F+Sa%C3%BAde+e+Beleza+Juntas/@-23.2155,-45.9067,17z/data=!4m18!1m9!3m8!1s0x94cc358118665853:0x83497124f51a1e1!2sAv.+Alfredo+Ign%C3%A1cio+Nogueira+Penido,+335+-+sala+1302+-+Jardim+Aquarius,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP,+12246-000!3b1!8m2!3d-23.2152057!4d-45.9068197!10e3!16s%2Fg%2F11zk6vmpbx!3m7!1s0x94cc4b40c23002c9:0x48cc2bdd77565c31!8m2!3d-23.2152057!4d-45.9068197!9m1!1b1!16s%2Fg%2F11gmg1t5n9?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDIyMi4wIKXMDSoASAFQAw%3D%3D"
 
 items:
+  - type: image
+    image: "/images/antes1.png"
+    alt: "Resultado de tratamento estético"
+
   - type: text
     text: "Vc é maravilhosa tem um cuidado especial e carinhoso com seus pacientes fiquei e estou muito satisfeita com a melhoria que tive com os seus cuidados eternamente grata por essa experiência,voltarei mais vezes com certeza,seus cuidados é maravilhoso,obrigada por tudo por enquanto."
     author: "Sandra Nunes Ribeiro - Avaliações Google"
@@ -16,6 +20,10 @@ items:
     text: "O novo espaço está maravilhoso e de muito bom gosto e o mais importante manteve a proposta de cuidar, acolher cada um que chega. O atendimento humanizado e integrativo é o que faz a total diferença, Kátia sempre muito disposta e com uma energia ímpar pra cuidar da gente. Eu amo e recomendo muito ❤️"
     author: "Evelín Cyrillo - Avaliações Google"
 
+  - type: image
+    image: "/images/antes2.png"
+    alt: "Resultado de tratamento estético"
+
   - type: text
     text: "Lugar Maravilhoso, ótima profissional muito atenciosa, trabalho impecável adoro muito super recomendo 10/10 ❤️"
     author: "Adiel Rosa - Avaliações Google"
@@ -23,6 +31,10 @@ items:
   - type: text
     text: "Trabalho com terapias manuais há muitos anos e finalmente achei uma profissional com técnica e precisão excelentes."
     author: "Samurai da Acupuntura - Avaliações Google"
+
+  - type: image
+    image: "/images/antes3.png"
+    alt: "Resultado de tratamento estético"
 
   - type: text
     text: "Experiência maravilhosa! Uma excelente profissional, acolhedora e humana. Super indico"
@@ -35,6 +47,10 @@ items:
   - type: text
     text: "Eu descrevo como as mãos que curam!!!!! A gente chega de um jeito, e sai Renovada, revigorada. Simplesmente maravigold 😊 ..."
     author: "Carla Paula Bahls - Avaliações Google"
+
+  - type: image
+    image: "/images/antes4.png"
+    alt: "Resultado de tratamento estético"
 
   - type: text
     text: "Excelente atendimento, aliviou bastante minhas dores. Super recomendo!"
@@ -55,3 +71,23 @@ items:
   - type: text
     text: "Ótimo atendimento, sou cliente a anos"
     author: "Fael Morais - Avaliações Google"
+
+  - type: image
+    image: "/images/clinica1.jpeg"
+    alt: "Resultado de tratamento estético"
+
+  - type: image
+    image: "/images/clinica2.jpeg"
+    alt: "Resultado de tratamento estético"
+
+  - type: image
+    image: "/images/clinica3.jpeg"
+    alt: "Resultado de tratamento estético"
+
+  - type: image
+    image: "/images/clinica4.jpeg"
+    alt: "Resultado de tratamento estético"
+
+  - type: image
+    image: "/images/clinica5.jpeg"
+    alt: "Resultado de tratamento estético"
